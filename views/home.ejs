@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Community News</title>
+</head>
+<body>
+    <div id="header">
+        <div class="logo">Community News</div>
+    </div>
+    <div id="top-bar">
+        <a href="/">Home</a> |
+        <a href="/new">Write a new article</a> |
+    </div>
+    <div id="latest-articles">
+        <% for(var i=0;i<data.length;i++) { %>
+            <a href="/article/<%= data[i].uid %>">
+            <div class="article">
+                <h3> <%= data[i].title%> </h3>
+                <div> <%= data[i].story.substring(0, 500)%> </div>
+            </div>
+            </a>
+        <% } %>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+*{
+    width: 100%;
+    margin: 0%;
+}
+#header{
+    background-color: #fcf9f6;
+    width:100%;
+    border: #030302;
+    height: 55px;
+}
+.logo{
+    font-size: 45px;
+    margin-left: 15px;
+}
+#top-bar{
+    background-color: rgba(248, 130, 51, 0.308);
+    padding: 10px;
+}
+#top-bar>a{
+    display: inline;
+    margin: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #030302;
+    
+}
+#top-bar>a:hover{
+    color: blue;
+}
+
+
+.article{
+    margin: 10px auto;
+    width: 80%;
+    height: 100px;
+    border: #030302 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.title{
+    width: 85%;
+    margin: 15px auto;
+}
+
+.story{
+    width: 80%;
+    margin: 10px auto;
+}
